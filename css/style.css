@@ -1,0 +1,333 @@
+/* Common CSS Start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+ol, ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec_info{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #0C3A6D;
+}
+/* Common CSS End */
+
+/* Header Section CSS Start */
+header{
+    background-color: #0C3A6D;
+}
+header .container > .row{
+    padding: 10px 0;
+    align-items: center;
+}
+header .logo{
+    width: 30%;
+}
+header .menu{
+    width: 70%;
+}
+header .menu ul{
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+}
+header .menu ul li{
+    position: relative;
+}
+header .menu ul li a{
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.4s linear;
+}
+header .menu ul li:hover > a{
+    background-color: #F9FF2A;
+    color: black;
+}
+header .menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+header .menu ul li ul li ul{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+header .menu ul li ul li a{
+    display: block;
+    background-color: #0C3A6D;
+    width: 150px;
+    transition: all 0.4s linear;
+}
+header .menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+/* Header Section CSS End */
+
+/* Slider Section CSS Start */
+#slider .container{
+    height: 100%;
+}
+#slider .container > .row{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#slider .slider_item{
+    height: 85vh;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+}
+#slider .slider_item .slider_content{
+    text-align: center;
+    color: #fff;
+}
+#slider .slider_item .slider_content h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+#slider .slider_item .slider_content p{
+    width: 700px;
+    text-align: center;
+    margin: 15px auto;
+}
+#slider .slider_item .slider_content a{
+    display: inline-block;
+    color: #fff;
+    background-color: #0C3A6D;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.4s linear;
+}
+#slider .slider_item .slider_content a:hover{
+    background-color: #F9FF2A;
+    color: black;
+}
+/* Slider Section CSS End */
+
+/* Service Area Section CSS Start */
+#service_area{
+    padding: 60px 0 40px;
+}
+#service_area .row{
+    justify-content: space-between;
+}
+#service_area .service_item{
+    width: calc(100% / 4);
+    text-align: center;
+    border-right: 1px solid gray;
+    padding: 30px 30px;
+}
+#service_area .service_item:last-child{
+    border-right: transparent;
+}
+#service_area .service_item i{
+    font-size: 30px;
+    color: rgba(12, 58, 109, 0.8);
+}
+#service_area .service_item h2{
+    margin: 10px 0;
+}
+#service_area .service_item p{
+    text-align: center;
+}
+/* Service Area Section CSS End */
+
+/* Portfolio Section Start */
+#portfolio{
+    padding: 60px 0 90px;
+}
+#portfolio .row{
+    justify-content: space-between;
+}
+#portfolio .protfolio_item{
+    width: calc((100% / 3) - 20px);
+    height: 350px;
+    overflow: scroll;
+}
+#portfolio .protfolio_item img{
+    max-width: 100%;
+}
+/* Portfolio Section End */
+
+/* Footer Top Section CSS Start */
+#footerTop{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 60px 0;
+}
+#footerTop .footerTop_item{
+    width: calc(100% / 4);
+}
+#footerTop .quick_links_item{
+    width: 15%;
+    padding: 0 25px;
+}
+#footerTop .latest_tweet_item{
+    width: 35%;
+}
+#footerTop .footerTop_item h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+#footerTop .footerTop_item h3{
+    font-weight: 400;
+}
+#footerTop .footerTop_item h5{
+    font-weight: 500;
+}
+#footerTop .footerTop_item p.admin{
+    margin: 5px 0;
+}
+#footerTop .footerTop_item p.post_desc{
+    margin: 5px 0;
+    text-align: justify;
+}
+#footerTop .footerTop_item a.footerTopBtn{
+    display: inline-block;
+    color: #000;
+    background-color: #F9FF2A;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: all 0.4s linear;
+}
+#footerTop .footerTop_item a.footerTopBtn:hover{
+    background-color: #0C3A6D;
+    color: #fff;
+}
+#footerTop .footerTop_item ul li a{
+    color: #fff;
+}
+#footerTop .footerTop_item.latest_tweet_item{
+    padding: 0px 55px 0 0;
+}
+#footerTop .footerTop_item.latest_tweet_item p.name{
+    font-weight: 700;
+}
+#footerTop .footerTop_item.latest_tweet_item p{
+    text-align: justify;
+    margin: 5px 0;
+}
+#footerTop .footerTop_item .contacts input,
+#footerTop .footerTop_item .contacts textarea{
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+#footerTop .footerTop_item .contacts button{
+    color: rgba(0, 0, 0, 0.9);
+    background-color: #F9FF2A;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.4s linear;
+}
+#footerTop .footerTop_item .contacts button:hover{
+    background-color: #0C3A6D;
+    color: #fff;
+}
+/* Footer Top Section CSS End */
+
+/* Footer Section CSS Start */
+footer{
+    background-color: #000;
+    padding: 20px 0;
+    color: #fff;
+}
+footer p{
+    font-size: 16px;
+}
+footer .footer_start{
+    width: 70%;
+}
+footer .footer_end{
+    width: 30%;
+    text-align: right;
+}
+
+/* Footer Section CSS End */
+
+/* ========================Gallery Page Design Start======================== */
+#gallery_body{
+    background-color: gray;
+}
+#galleryTitle{
+    text-align: center;
+    background-color: #0C3A6D;
+}
+#galleryTitle .container .row{
+    justify-content: center;
+}
+#galleryTitle h1{
+    font-size: 60px;
+    padding: 20px 0;
+    color: #fff;
+}
+.galleryImageItem {
+    width: 50%;
+}
+.galleryImageItem img{
+    width: 100%;
+}
+/* ========================Gallery Page Design End======================== */
+
+/* =======================Portfolio Page Design Start===================== */
+.portfolioPageH1{
+    text-align: center;
+    padding: 20px;
+    background-color: #0C3A6D;
+    color: #fff;
+}
+#portfolioPage{
+    padding: 20px 0;
+    background-color: rgb(12, 58, 109, 0.6);
+}
+#portfolioPage .row{
+    justify-content: space-between;
+}
+#portfolioPage .portfolio_item{
+    width: calc((100% / 3) - 10px);
+    border: 1px solid gray;
+}
+#portfolioPage .portfolio_item img{
+    width: 100%;
+}
+.portfolio_item {
+    width: calc(100% / 3);
+}
+/* =======================Portfolio Page Design End===================== */
